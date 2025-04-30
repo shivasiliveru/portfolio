@@ -1,0 +1,80 @@
+/* Reset default padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding/border don't affect width */
+}
+
+/* Navigation bar container */
+#navbar {
+    height: 60px;
+    width: 100%;
+    max-width: 1550px; /* Optional: limit max width for large screens */
+    margin: 0 auto; /* Center the navbar */
+    background-color: #1b1d1f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+/* Anchor tag styling */
+a {
+    text-decoration: none;
+    color: inherit; /* Inherits color from parent (white in navbar) */
+}
+
+/* Logo styling */
+#logo {
+    width: 200px;
+    height: 60px;
+    background-image: url("logo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Search bar */
+#search {
+    width: 40%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: rgb(38, 77, 112);
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+/* Icon styling */
+#icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Account section */
+#account {
+    width: 70px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Responsive example (optional) */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #search {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+}
